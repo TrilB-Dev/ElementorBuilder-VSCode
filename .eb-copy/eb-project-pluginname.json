@@ -1,0 +1,106 @@
+{
+  "ProjectName": "",
+  "ProjectVersion": "",
+  "ProjectSettings": {
+      "psr4Enabled": false,
+      "enableFinder": false,
+      "enableControls": false,
+      "enableDynamicTags": false,
+      "enableThemeConditions": false,
+      "enableThemeLocations": false,
+      "enableFormFields": false,
+      "enableFormActions": false,
+      "enableContextMenus": false
+  },
+  "ProjectConfig": {
+    "ProjectNamespace": "",
+    "WidgetsNamespace": "",
+    "TemplateNamespace": "",
+    "FinderNamespace": "",
+    "ControlsNamespace": "",
+    "TagsNamespace": "",
+    "ThemeConditionsNamespace": "",
+    "ThemeLocationsNamespace": "",
+    "FormFieldsNamespace": "",
+    "FormActionsNamespace": "",
+    "ContextMenusNamespace": "",
+    "ProjectPrefix": "",
+    "TextDomain": ""
+  },
+  "ProjectAssets": {
+    "registerScripts": {
+      "assetscript01": {
+        "src": "assets/js/assetscript01.js",
+        "deps": ["jquery"],
+        "ver": "1.0.0",
+        "in_footer": true
+      }
+    },
+    "registerStyles": {
+      "assetstyle01": {
+        "src": "assets/css/assetstyle01.css",
+        "deps": [],
+        "ver": "1.0.0"
+      },
+      "assetstyle02": {
+        "src": "assets/css/assetstyle02.css",
+        "deps": ["jquery"],
+        "ver": "1.0.0"
+      }
+    }
+  },
+  "widgets": {
+    "general": {
+      "title": "General",
+      "icon": "eicon-posts-ticker",
+      "widgets": [
+        ""
+      ]
+    },
+    "advanced": {
+      "title": "Advanced",
+      "icon": "eicon-advanced",
+      "widgets": [
+        ""
+      ]
+    },
+    "layout": {
+      "title": "Layout",
+      "icon": "eicon-layout",
+      "widgets": [
+        ""
+      ]
+    }
+  },
+  "dynamicTags": [
+    ""
+
+  ],
+  "finderCategories": [
+    ""
+
+  ],
+  "controls": [
+    ""
+
+  ],
+  "themeConditions": [
+    ""
+
+  ],
+  "themeLocations": [
+    ""
+
+  ],
+  "formFields": [
+    ""
+
+  ],
+  "formActions": [
+    ""
+  ],
+  "contextMenus": [
+    ""
+
+  ]
+}

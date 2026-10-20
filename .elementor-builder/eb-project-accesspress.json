@@ -1,0 +1,58 @@
+{
+  "ProjectName": "AccessPress",
+  "ProjectVersion": "1.0.0",
+  "ProjectWizardComplete": true,
+  "ProjectSettings": {
+    "psr4Enabled": true,
+    "widgetsEnabled": true,
+    "enableFinder": true,
+    "enableControls": true,
+    "enableDynamicTags": true,
+    "enableThemeConditions": true,
+    "enableThemeLocations": true,
+    "enableFormFields": true,
+    "enableFormActions": true,
+    "enableContextMenus": true
+  },
+  "ProjectConfig": {
+    "ProjectNamespace": "AccessPress\\Includes\\Plugins\\Elementor\\Includes\\",
+    "WidgetsNamespace": "AccessPress\\Includes\\Plugins\\Elementor\\Includes\\Widgets\\",
+    "TemplateNamespace": "AccessPress\\Includes\\Plugins\\Elementor\\Includes\\Templates\\",
+    "FinderNamespace": "AccessPress\\Includes\\Plugins\\Elementor\\Includes\\Finder\\",
+    "ControlsNamespace": "AccessPress\\Includes\\Plugins\\Elementor\\Includes\\Controls\\",
+    "TagsNamespace": "AccessPress\\Includes\\Plugins\\Elementor\\Includes\\DynamicTags\\",
+    "ThemeConditionsNamespace": "AccessPress\\Includes\\Plugins\\Elementor\\Includes\\ThemeConditions\\",
+    "ThemeLocationsNamespace": "AccessPress\\Includes\\Plugins\\Elementor\\Includes\\ThemeLocations\\",
+    "FormFieldsNamespace": "AccessPress\\Includes\\Plugins\\Elementor\\Includes\\FormFields\\",
+    "FormActionsNamespace": "AccessPress\\Includes\\Plugins\\Elementor\\Includes\\FormActions\\",
+    "ContextMenusNamespace": "AccessPress\\Includes\\Plugins\\Elementor\\Includes\\ContextMenus\\",
+    "ProjectPrefix": "accesspress",
+    "TextDomain": "accesspress"
+  },
+  "ProjectAssets": {
+    "registerScripts": [],
+    "registerStyles": []
+  },
+  "widgets": {
+    "accesspress": {
+      "title": "AccessPress",
+      "icon": "eicon-lock",
+      "widgets": [
+        "login_form"
+      ]
+    },
+    "forms": {
+      "title": "Forms",
+      "icon": "eicon-form-horizontal",
+      "widgets": []
+    }
+  },
+  "dynamicTags": [],
+  "finderCategories": [],
+  "controls": [],
+  "themeConditions": [],
+  "themeLocations": [],
+  "formFields": [],
+  "formActions": [],
+  "contextMenus": []
+}

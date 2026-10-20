@@ -1,0 +1,51 @@
+{
+  "widgetName": "login_form",
+  "widgetTitle": "Login Form",
+  "widgetDescription": "",
+  "widgetIcon": "eicon-lock",
+  "widgetCategories": "accesspress",
+  "widgetKeywords": [],
+  "widgetHelpUrl": "",
+  "widgetUpscaleData": "",
+  "widgetDependencies": {
+    "scripts": [],
+    "styles": []
+  },
+  "widgetInnerWrapper": "",
+  "widgetDynamicContent": "",
+  "widgetTemplate": "login_form",
+  "widgetContentTemplate": "login_form",
+  "widgetControls": {
+    "content-section": {
+      "sectionLabel": "Content",
+      "sectionConditions": {},
+      "controls": {
+        "test_field": {
+          "type": "text",
+          "label": "Test Field",
+          "description": "Test Field Description",
+          "labelBlock": true,
+          "showLabel": true,
+          "separator": "default",
+          "defaultValue": "",
+          "default": "",
+          "placeholder": "Placeholder",
+          "inputType": "text"
+        },
+        "test_number_field": {
+          "type": "number",
+          "label": "Test Number Field",
+          "description": "This is a Number test Field",
+          "labelBlock": true,
+          "showLabel": true,
+          "separator": "before",
+          "defaultValue": "0",
+          "default": "0",
+          "min": "0",
+          "max": "999999999",
+          "step": "10"
+        }
+      }
+    }
+  }
+}

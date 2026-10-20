@@ -1,0 +1,15 @@
+{
+  "displayName": "Elementor Builder for VSCode",
+  "description": "An Interactive UI for building Elementor widgets",
+  "command.openSidebar.title": "Elementor Builder: Open Sidebar",
+  "command.setupWorkspace.title": "Elementor Builder: Setup Workspace",
+  "command.openProjectFile.title": "Elementor Builder: Open Workspace Project",
+  "command.openControlCentre.title": "Elementor Builder: Open Control Centre",
+  "command.addWidgetGroup.title": "Elementor Builder: Add Group",
+  "command.addWidget.title": "Elementor Builder: Add Widget",
+  "command.renameWidgetGroup.title": "Elementor Builder: Rename Group",
+  "command.renameWidget.title": "Elementor Builder: Rename Widget",
+  "view.elementorBuilder.title": "Elementor Builder",
+  "view.elementor-builder-main.name": "Builder",
+  "view.elementor-builder-widgets.name": "Widgets"
+}

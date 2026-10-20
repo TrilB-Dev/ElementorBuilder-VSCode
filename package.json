@@ -1,0 +1,191 @@
+{
+  "name": "trilbdev-elementor-builder-vscode",
+  "displayName": "Elementor Builder for VSCode",
+  "description": "An Interactive UI for building Elementor widgets",
+  "version": "0.0.1",
+  "publisher": "TrilBDev",
+  "license": "MIT",
+  "icon": "./assets/images/logo/Elementor-Builder-Logo-Icon.png",
+  "author": {
+    "name": "MrTrilB",
+    "email": "mrtrilb@trilb.dev",
+    "url": "https://trilb.dev/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trilbdev/elementor-builder-vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/trilbdev/elementor-builder-vscode/issues"
+  },
+  "homepage": "https://github.com/trilbdev/elementor-builder-vscode/",
+  "keywords": [
+    "elementor",
+    "vscode",
+    "builder",
+    "elementor-widget",
+    "elementor-builder",
+    "elementor-extension",
+    "elementor-mcp",
+    "mcp"
+  ],
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "main": "./dist/extension.js",
+  "engines": {
+    "vscode": "^1.138.0"
+  },
+  "activationEvents": [
+    "onCommand:trilbdev-elementor-builder-vscode.openSidebar",
+    "onCommand:trilbdev-elementor-builder-vscode.openControlCentre",
+    "onCommand:trilbdev-elementor-builder-vscode.setupWorkspace",
+    "onView:elementorBuilder",
+    "onView:elementor-builder-main",
+    "onView:elementor-builder-widgets"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "trilbdev-elementor-builder-vscode.openSidebar",
+        "title": "%command.openSidebar.title%"
+      },
+      {
+        "command": "trilbdev-elementor-builder-vscode.setupWorkspace",
+        "title": "%command.setupWorkspace.title%"
+      },
+      {
+        "command": "trilbdev-elementor-builder-vscode.openProjectFile",
+        "title": "%command.openProjectFile.title%",
+        "icon": "$(json)"
+      },
+      {
+        "command": "trilbdev-elementor-builder-vscode.openControlCentre",
+        "title": "%command.openControlCentre.title%",
+        "icon": "$(settings-compact)"
+      },
+      {
+        "command": "trilbdev-elementor-builder-vscode.addWidgetGroup",
+        "title": "%command.addWidgetGroup.title%",
+        "icon": "$(new-folder)"
+      },
+      {
+        "command": "trilbdev-elementor-builder-vscode.addWidget",
+        "title": "%command.addWidget.title%",
+        "icon": "$(diff-added)"
+      },
+      {
+        "command": "trilbdev-elementor-builder-vscode.renameWidgetGroup",
+        "title": "%command.renameWidgetGroup.title%",
+        "icon": "$(rename)"
+      },
+      {
+        "command": "trilbdev-elementor-builder-vscode.renameWidget",
+        "title": "%command.renameWidget.title%",
+        "icon": "$(rename)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "trilbdev-elementor-builder-vscode.openControlCentre",
+          "when": "view == elementor-builder-main",
+          "group": "navigation@1"
+        },
+        {
+          "command": "trilbdev-elementor-builder-vscode.openProjectFile",
+          "when": "view == elementor-builder-main",
+          "group": "navigation@2"
+        },
+        {
+          "command": "trilbdev-elementor-builder-vscode.addWidgetGroup",
+          "when": "view == elementor-builder-widgets",
+          "group": "navigation@1"
+        },
+        {
+          "command": "trilbdev-elementor-builder-vscode.addWidget",
+          "when": "view == elementor-builder-widgets",
+          "group": "navigation@2"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "trilbdev-elementor-builder-vscode.renameWidgetGroup",
+          "when": "view == elementor-builder-widgets && viewItem == elementorBuilderGroup",
+          "group": "inline"
+        },
+        {
+          "command": "trilbdev-elementor-builder-vscode.renameWidget",
+          "when": "view == elementor-builder-widgets && viewItem == elementorBuilderWidget",
+          "group": "inline"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "elementorBuilder",
+          "title": "%view.elementorBuilder.title%",
+          "icon": "assets/images/logo/eb-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "elementorBuilder": [
+        {
+          "type": "webview",
+          "id": "elementor-builder-main",
+          "name": "%view.elementor-builder-main.name%"
+        },
+        {
+          "type": "tree",
+          "id": "elementor-builder-widgets",
+          "name": "%view.elementor-builder-widgets.name%"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "package:install": "npx @vscode/vsce package",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "node ./out/test/runTest.js"
+  },
+  "dependencies": {
+    "@crestapps/bootstrap-select": "^1.2.6",
+    "@griffel/react": "^1.7.8",
+    "@vscode/codicons": "^0.0.46-24",
+    "bootstrap": "^5.3.8",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "24.x",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.0",
+    "@types/vscode": "^1.138.0",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0",
+    "css-loader": "^7.1.5",
+    "eslint": "^10.5.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.6.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.1",
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3"
+  },
+  "overrides": {
+    "diff": "^8.0.4",
+    "serialize-javascript": "^7.0.6"
+  }
+}

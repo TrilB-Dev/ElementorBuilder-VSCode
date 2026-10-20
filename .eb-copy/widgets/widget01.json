@@ -1,0 +1,93 @@
+{
+    "widgetName": "widget01",
+    "widgetTitle": "Widget 01",
+    "widgetIcon": "eicon-posts-ticker",
+    "widgetCategories": "general",
+    "widgetKeywords": ["widget01", "general", "widget"],
+    "widgetHelpUrl": "https://example.com/widget01-help",
+    "widgetUpscaleData": "",
+    "widgetDependencies": {
+        "scripts": ["assetscript01"],
+        "styles": ["assetstyle01", "assetstyle02"]
+    },
+    "widgetInnerWrapper": "",
+    "widgetDynamicContent": "",
+    "widgetTemplate": "widget01",
+    "widgetContentTemplate": "widget01",
+    "widgetControls": {
+        "contentSection-section": {
+            "sectionLabel": "Content",
+            "sectionConditions": {},
+            "controls": {
+              "text_field01": {
+                "type": "text",
+                "label": "Text Control",
+                "description": "",
+                "labelBlock": true,
+                "showLabel": false,
+                "separator": "default",
+                "inputType": "text",
+                "placeholder": "",
+                "title": "",
+                "classes": "",
+                "defaultString": ""
+              },
+              "select_field01": {
+                "type": "select",
+                "label": "Select Control",
+                "description": "",
+                "showLabel": true,
+                "labelBlock": false,
+                "separator": "default",
+                "options": {
+                    "option1": "Option 1",
+                    "option2": "Option 2",
+                    "option3": "Option 3"
+                },
+                "groups": {},
+                "defaultValue": "option1"
+              }
+            }
+          },
+          "style-section": {
+            "sectionLabel": "Style",
+            "sectionConditions": {},
+            "controls": {
+              "switcher_field01": {
+                "type": "switcher",
+                "label": "Switcher Control",
+                "description": "",
+                "labelBlock": true,
+                "showLabel": false,
+                "separator": "default",
+                "labelOn": "On",
+                "labelOff": "Off",
+                "returnValue": "on",
+                "default": "",
+                "selectors": {
+                    "{{WRAPPER}} .switcher-field": "display: none;"
+                }
+              },
+              "select_field01": {
+                "type": "select",
+                "label": "Select Control",
+                "description": "",
+                "showLabel": true,
+                "labelBlock": false,
+                "separator": "default",
+                "options": {
+                    "blue": "Blue",
+                    "red": "Red",
+                    "green": "Green"
+                },
+                "groups": {},
+                "defaultValue": "blue",
+                "selectors": {
+                    "{{WRAPPER}} .select-field": "background: blue;"
+                }
+              }
+            }
+        }
+
+    }
+}

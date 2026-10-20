@@ -1,0 +1,134 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"POT-Creation-Date: 2026-09-28 00:00+0000\n"
+"PO-Revision-Date: 2026-09-28 00:00+0000\n"
+"Last-Translator: TrilBDev\n"
+"Language-Team: TrilBDev\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Elementor Builder"
+msgstr "Elementor Builder"
+
+msgid "Project"
+msgstr "Project"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Troubleshooting"
+msgstr "Troubleshooting"
+
+msgid "Control Centre"
+msgstr "Control Centre"
+
+msgid "Start Setup Wizard"
+msgstr "Start Setup Wizard"
+
+msgid "Open Navigation"
+msgstr "Open Navigation"
+
+msgid "Close Navigation"
+msgstr "Close Navigation"
+
+msgid "Project name"
+msgstr "Project name"
+
+msgid "Version"
+msgstr "Version"
+
+msgid "Namespace"
+msgstr "Namespace"
+
+msgid "Enabled settings"
+msgstr "Enabled settings"
+
+msgid "No project settings enabled"
+msgstr "No project settings enabled"
+
+msgid "Add group"
+msgstr "Add group"
+
+msgid "Widgets"
+msgstr "Widgets"
+
+msgid "Actions"
+msgstr "Actions"
+
+msgid "No widgets in this group yet."
+msgstr "No widgets in this group yet."
+
+msgid "Widget builder"
+msgstr "Widget builder"
+
+msgid "Widget name"
+msgstr "Widget name"
+
+msgid "Widget label"
+msgstr "Widget label"
+
+msgid "Section"
+msgstr "Section"
+
+msgid "Add controls"
+msgstr "Add controls"
+
+msgid "No controls added yet. Choose a category and type above."
+msgstr "No controls added yet. Choose a category and type above."
+
+msgid "Add selected control"
+msgstr "Add selected control"
+
+msgid "Add widget"
+msgstr "Add widget"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Delete"
+msgstr "Delete"
+
+msgid "Back"
+msgstr "Back"
+
+msgid "Next"
+msgstr "Next"
+
+msgid "Create"
+msgstr "Create"
+
+msgid "Project features"
+msgstr "Project features"
+
+msgid "Project setup"
+msgstr "Project setup"
+
+msgid "Project details"
+msgstr "Project details"
+
+msgid "Project settings"
+msgstr "Project settings"
+
+msgid "Namespace setup"
+msgstr "Namespace setup"
+
+msgid "Review and create"
+msgstr "Review and create"
+
+msgid "Welcome"
+msgstr "Welcome"
+
+msgid "The Control Center is loading the interactive builder view..."
+msgstr "The Control Center is loading the interactive builder view..."
+
+msgid "Configure the builder metadata, widget groups, and generated Elementor component setup."
+msgstr "Configure the builder metadata, widget groups, and generated Elementor component setup."
+
+msgid "Add responsive widgets, content controls, and advanced styling controls."
+msgstr "Add responsive widgets, content controls, and advanced styling controls."

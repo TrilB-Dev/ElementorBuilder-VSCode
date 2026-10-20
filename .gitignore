@@ -1,0 +1,10 @@
+out
+dist
+node_modules
+.vscode-test/
+*.vsix
+assets/images/logo/Copilot*
+assets/images/logo/*.psd
+assets/images/logo/*.ai
+assets/images/logo/*@2x.png
+assets/images/logo/*@3x.png
