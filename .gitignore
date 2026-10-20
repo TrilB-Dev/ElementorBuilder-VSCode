@@ -8,3 +8,5 @@ assets/images/logo/*.psd
 assets/images/logo/*.ai
 assets/images/logo/*@2x.png
 assets/images/logo/*@3x.png
+.eb-copy/
+package-lock.json
